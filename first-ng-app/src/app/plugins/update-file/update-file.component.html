@@ -1,0 +1,7 @@
+<div class="p-mt-5">
+  <p-fileUpload  name="file" url="/upload"   accept="image/*" (onUpload)="onUploadResult($event)"></p-fileUpload>
+
+  <div class="p-mt-5" *ngIf="resultData != ''">
+    上传回调:{{resultData}}
+  </div>
+</div>
